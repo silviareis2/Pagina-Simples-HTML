@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>
+      HTML| Bootcamp Santander & DIO</title>
+</head>
+
+<body>
+   <header style="text-align: center;">
+      <h1>
+         <font color="red" face="arial">Santader</font> & <font color="blue" face="arial"> DIO</font> 2025 | Front-End
+      </h1>
+      <h2>Primeiros Passos com <abbr title="HyperText Markup Language">HTML</abbr></h2>
+   </header>
+   <hr>
+
+   <main id="inicio">
+      <section>
+         <h2>Indice</h2>
+         <nav>
+            <ol>
+               <li>
+                  <a href="#introducao-html">Introdução ao HTML na Prática</a>
+               </li>
+               <li>
+                  <a href="#formularios">Trabalhando com Formulário em HTML</a>
+               </li>
+               <li>
+                  <a href="#html-formatacao">Estruturando seu HTML + formatações</a>
+               </li>
+               <li>
+                  <a href="#midias">Trabalhando com Mídias utilizando HTML</a>
+               </li>
+               <li>
+                  <a href="#tabelas">Criando Tabelas com HTML</a>
+               </li>
+               <li>
+                  <a href="#semantico">Entendendo HTML Semâmtico</a>
+               </li>
+               <li><a href="#referencias">Referências</a></li>
+            </ol>
+         </nav>
+         <hr>
+      </section>
+      <section>
+         <h2>📋1. Introdução ao <abbr title="HyperText Markup Language">HTML </abbr> na Prática</h2>
+         <h3 id="introducao-html">O que é <abbr title="HyperText Markup Language"></abbr>?</h3>
+         <p>
+            <strong>HTML</strong> (<i>HyperText Markup Language</i>) é a linguagem usada para criar páginas da web. Com
+            ele, podemos organizar <mark>textos</mark>,<mark> imagens</mark> , <mark>links</mark>, <mark>vídeos</mark> e
+            outros <u>conteúdos em um site</u>.
+         </p>
+
+         <p>Ele funciona com <em>tags</em>, que são comandos colocados entre sinais de menor e maior (&lt; &gt;), como
+            <code>&lt;p&gt;</code> para parágrafo ou <code>&lt;img&gt;</code> para imagem.
+         </p>
+
+         <p>O HTML é a base de qualquer página da internet. Ele pode ser usado junto com <strong>CSS</strong> (para o
+            design) e <strong>JavaScript</strong> (para interações).</p>
+
+      </section>
+      <section>
+         <h2>🛠️Ferramentas Utilizadas</h2>
+         <p>
+            📌 O <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> é um editor de
+            código-fonte desenvolvido pela Microsoft para Windows, Linux e macOS. <br>
+            Ele inclui suporte para depuração, controle de versionamento Git incorporado, realce de sintaxe,
+            complementação inteligente de código, snippets e refatoração de código. Ele é customizável, permitindo que
+            os usuários possam mudar o tema do editor, teclas de atalho e preferências. Ele é um software livre e de
+            código aberto,apesar do download oficial estar sob uma licença proprietária.
+         </p>
+         <p>📌Ferramentas para desenvolvedores do Google Chrome para verificar tags.</p>
+         <p>
+            Para abrir as Ferramentas para desenvolvedores do Chrome, você tem as seguintes opções:
+         </p>
+         <ul>
+            <li>
+               Clique com o botão direito do mouse em uma página e selecione Inspecionar. O código HTML do elemento
+               clicado será exibido.
+            </li>
+            <li>
+               Na parte de cima da janela do navegador, selecione <b>Visualização <code>&gt;</code> Desenvolvedor
+                  <code>&gt;</code> Ferramentas para
+                  desenvolvedores.</b>
+            </li>
+         </ul>
+      </section>
+
+      <section>
+         <h2>📋Estrutura Básica do <abbr title="HyperText Markup Language">HTML</abbr></h2>
+         <h3>Explicação rápida das principais tags:</h3>
+
+         <ul>
+            <li><code>&lt;!DOCTYPE html&gt;</code>: informa ao navegador que o documento é HTML5.</li>
+            <li><code>&lt;html&gt;</code>: a raiz do documento.</li>
+            <li><code>&lt;head&gt;</code>: contém informações que não aparecem diretamente na página (como título e
+               meta-informações).</li>
+            <li><code>&lt;body&gt;</code>: tudo que aparece na tela do site.</li>
+            <li><code>&lt;header&gt;</code>: cabeçalho da página (pode conter o título, menus, etc).</li>
+            <li><code>&lt;main&gt;</code>: conteúdo principal da página.</li>
+            <li><code>&lt;footer&gt;</code>: rodapé com informações complementares.</li>
+         </ul>
+
+      </section>
+      <section>
+         <h2>📋Tags</h2>
+         <h3>Tags <abbr title="HyperText Markup Language">HTML</abbr> mais comuns:</h3>
+
+         <ul>
+            <li><code>&lt;title&gt;</code>: define o título da página que aparece na aba do navegador.</li>
+            <li><code>&lt;meta&gt;</code>: define metadados como codificação e descrição da página.</li>
+            <li><code>&lt;h1&gt; até &lt;h6&gt;</code>: títulos e subtítulos, sendo &lt;h1&gt; o mais importante e
+               &lt;h6&gt; o menos.</li>
+            <li><code>&lt;p&gt;</code>: define um parágrafo de texto.</li>
+            <li><code>&lt;a&gt;</code>: cria um link para outra página ou site.</li>
+            <li><code>&lt;img&gt;</code>: insere uma imagem na página.</li>
+            <li><code>&lt;ul&gt;</code>: cria uma lista não ordenada (com marcadores).</li>
+            <li><code>&lt;ol&gt;</code>: cria uma lista ordenada (com números).</li>
+            <li><code>&lt;li&gt;</code>: representa um item dentro de uma lista (&lt;ul&gt; ou &lt;ol&gt;).</li>
+            <li><code>&lt;div&gt;</code>: contêiner genérico para agrupar conteúdo.</li>
+            <li><code>&lt;span&gt;</code>: contêiner genérico em linha, usado para estilizar partes do texto.</li>
+            <li><code>&lt;section&gt;</code>: define uma seção temática do conteúdo.</li>
+            <li><code>&lt;article&gt;</code>: representa um conteúdo independente e completo (como um post).</li>
+            <li><code>&lt;nav&gt;</code>: define um menu ou links de navegação.</li>
+            <li><code>&lt;br&gt;</code>: quebra de linha (usado para pular linha dentro de um parágrafo).</li>
+            <li><code>&lt;hr&gt;</code>: insere uma linha horizontal (divisor visual).</li>
+         </ul>
+
+      </section>
+      <section>
+         <h2>📋Atributos das tags</h2>
+         <h3>Atributos comuns das tags HTML:</h3>
+
+         <ul>
+            <li><code>lang</code>: define o idioma do conteúdo (usado na tag <code>&lt;html&gt;</code>, ex:
+               <code>lang="pt-BR"</code>).
+            </li>
+            <li><code>charset</code>: define a codificação de caracteres (usado no <code>&lt;meta&gt;</code>, ex:
+               <code>charset="UTF-8"</code>).
+            </li>
+            <li><code>href</code>: define o destino de um link (usado em <code>&lt;a&gt;</code>, ex:
+               <code>href="pagina.html"</code>).
+            </li>
+            <li><code>src</code>: define a origem (endereço) de uma imagem ou script (ex:
+               <code>&lt;img src="foto.jpg"&gt;</code>).
+            </li>
+            <li><code>alt</code>: texto alternativo de uma imagem (usado em <code>&lt;img&gt;</code>, ex:
+               <code>alt="Descrição da imagem"</code>).
+            </li>
+            <li><code>title</code>: mostra uma dica ao passar o mouse (funciona em várias tags).</li>
+            <li><code>id</code>: identifica um elemento único na página (ex: <code>id="menu"</code>).</li>
+            <li><code>class</code>: agrupa elementos com o mesmo estilo (ex: <code>class="destaque"</code>).</li>
+            <li><code>style</code>: adiciona estilo direto na tag (ex: <code>style="color: red;"</code>).</li>
+            <li><code>target</code>: define onde o link será aberto (ex: <code>target="_blank"</code> para nova aba).
+            </li>
+            <li><code>type</code>: define o tipo de conteúdo (usado em <code>&lt;script&gt;</code>,
+               <code>&lt;input&gt;</code> e outros).
+            </li>
+            <li><code>value</code>: valor de um campo de formulário (usado em <code>&lt;input&gt;</code>,
+               <code>&lt;button&gt;</code>, etc).
+            </li>
+            <li><code>name</code>: nome do campo de formulário (usado para identificar dados enviados).</li>
+            <li><code>placeholder</code>: texto de dica dentro de um campo (usado em <code>&lt;input&gt;</code>).</li>
+            <li><code>disabled</code>: desativa um campo (ex: <code>&lt;input disabled&gt;</code>).</li>
+            <li><code>readonly</code>: torna um campo somente leitura (não editável).</li>
+         </ul>
+      </section>
+      <section>
+         <h2>📋Textos</h2>
+         <p>
+            Em HTML, citações são usadas para indicar trechos de texto que vêm de outras fontes ou para destacar
+            palavras ditas por alguém. O HTML oferece tags específicas para representar diferentes tipos de citações.
+            Abaixo estão as principais:
+         </p>
+         <p>
+            ✔️<code>&lt;blockquote&gt;</code> – Citação em bloco Usada para citações longas, geralmente com recuo. Ideal
+            para parágrafos inteiros.
+         </p>
+         <p>Veja o código:</p>
+         <pre>
+            <code>&lt;blockquote cite="https://www.exemplo.com/artigo"&gt;
+                     A tecnologia é apenas uma ferramenta. No que se refere a conseguir que as crianças trabalhem juntas e
+                     motivá-las, o professor é o mais importante.
+            &lt;/blockquote&gt;
+            </code>
+         </pre>
+         <p>Resultado real:</p>
+         <blockquote cite="https://www.exemplo.com/artigo">
+            A tecnologia é apenas uma ferramenta. No que se refere a conseguir que as crianças trabalhem juntas e
+            motivá-las, o professor é o mais importante.
+         </blockquote>
+         <p><strong>Obs.:</strong>Você pode usar o atributo <mark>cite</mark> para indicar a fonte da citação (opcional).
+         </p>
+
+         ✔️<code>&lt;q&gt;</code> – Citação curta
+         Usada para citações curtas em linha, como quando você menciona algo que alguém disse em uma frase.
+
+         <p>Veja o código:</p>
+         <pre><code>&lt;p&gt;Ela disse: 
+    &lt;q&gt;
+      &lt;i&gt;A persistência é o caminho do êxito.&lt;/i&gt;
+   &lt;/q&gt;
+&lt;/p&gt;</code></pre>
+         <p>Resultado real:</p>
+
+         <p>Ela disse:
+            <q><i>A persistência é o caminho do êxito.</i></q>
+         </p>
+         <p><strong>Obs.:</strong>
+            Os navegadores geralmente colocam aspas automaticamente em volta da citação.
+         </p>
+         <p>
+            ✔️<code>&LT;cite&gt;</code> - Referência a uma obra <br>Usada para indicar o título de uma obra, como
+            livros, filmes, músicas, sites, etc. <br>Exemplo com a tag &lt;cite&gt;
+         </p>
+         <p>Veja o código:</p>
+         <pre><code>&lt;p&gt;
+   Meu livro favorito é &lt;cite&gt;Dom Casmurro&lt;/cite&gt;, de Machado de Assis.
+&lt;/p&gt;
+</code></pre>
+         <p>Resultado real:</p>
+         <p>Meu livro favorito é <cite>Dom Casmurro</cite>, de Machado de Assis.</p>
+         <p><strong>Obs.: </strong>
+            O conteúdo da tag <mark><code>&lt;cite&gt;</code></mark>geralmente é exibido em itálico.
+         </p>
+         <p>
+            ✔️<code>&LT;abbr&gt;</code> - Abreviações (com tooltip) <br> não seja uma citação propriamente dita, é útil
+            quando você quer mostrar significados de siglas ou abreviações. <br>Exemplo:
+         </p>
+         <p>Veja o código:</p>
+         <pre><code>&lt;p&gt;
+   O &lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt; é a base da web.
+&lt;/p&gt;</code></pre>
+
+         <p>Resultado real:</p>
+         <p>O <abbr title="HyperText Markup Language">HTML</abbr> é a base da web.</p>
+         <p>
+            ✔️<code>&lt;code&gt;</code>, <code>&lt;pre&gt;</code>,
+            <code>&lt;Kbd&gt;</code> - Citações técnicas ou comandos <br> Essas são úteis para destacar códigos,
+            comandos ou textos literais, comuns em citações técnicas.
+         </p>
+
+         <p>Veja o código:</p>
+         <pre><code>&lt;p&gt;
+   Use o comando &lt;kbd&gt;Ctrl + C&lt;/kbd&gt; para copiar.
+&lt;/p&gt;</code></pre>
+
+         <p>Resultado real:</p>
+         <p>Use o comando <kbd>Ctrl + C</kbd> para copiar.</p>
+
+      </section>
+      <hr>
+      <section>
+         <h2 id="formularios">
+            2. Trabalhando com Formulário em <abbr title="HyperText Markup Language">HTML </abbr>
+            <a href="#inicio">
+               <img src="./src/midias/botao volta.png" alt="desenho de uma seta voltar" width="16px">
+            </a>
+         </h2>
+         <h3>
+            O que é um formulário em <abbr title="HyperText Markup Language">HTML</abbr>?
+         </h3>
+         <p>
+            Um formulário em HTML é utilizado para <u>coletar dados do usuário</u> , como <u>nome</u>, <u>e-mail</u>,
+            <u>opiniões</u> e <u> preferências</u>.
+            Ele é composto por campos interativos, como caixas de texto, botões de envio e menus de seleção.
+            Esses dados podem ser enviados para um servidor ou processados por <em>scripts</em> .
+         </p>
+         <p>Abaixo um exemplo de formulário:</p>
+
+         <h3>Fale Conosco</h3>
+
+         <form action="#" method="post" name="feedback" autocomplete="off">
+
+            <fieldset>
+               <legend>Dados Pessoais</legend>
+
+               <label for="nome">Nome completo*:</label><br>
+               <input type="text" id="nome" name="nome" required placeholder="ex.: Ana Souza"><br><br>
+
+               <label for="email">E-mail*:</label><br>
+               <input type="email" id="email" name="email" placeholder="ex.: anasouza@gmail.com"><br><br>
+
+               <label for="nascimento">Data de nascimento:</label><br>
+               <input type="date" id="nascimento" name="nascimento"><br><br>
+
+               <label for="telefone">Telefone*:</label><br>
+               <input type="tel" id="telefone" name="telefone"><br><br>
+            </fieldset>
+
+            <fieldset>
+               <legend>Escolha seus temas de interesse:</legend>
+
+               <label for="opiniao">Você recomendaria nosso blog?</label><br>
+               <select name="opiniao">
+                  <option value="">Selecionar:</option>
+                  <option value="sim" selected>Sim</option>
+                  <option value="nao">Não</option>
+                  <option value="talvez">Talvez</option>
+               </select><br><br>
+
+               <p>Tecnologias Front-End:</p>
+               <input type="checkbox" id="html" name="frontend[]" value="HTML">
+               <label for="html">HTML</label><br>
+
+               <input type="checkbox" id="css" name="frontend[]" value="CSS">
+               <label for="css">CSS</label><br>
+
+               <input type="checkbox" id="js" name="frontend[]" value="JavaScript">
+               <label for="js">JavaScript</label><br><br>
+
+               <p>Tecnologias Back-End:</p>
+               <input type="checkbox" id="node" name="backend[]" value="Node.js">
+               <label for="node">Node.js</label><br>
+
+               <input type="checkbox" id="php" name="backend[]" value="PHP">
+               <label for="php">PHP</label><br>
+
+               <input type="checkbox" id="python" name="backend[]" value="Python">
+               <label for="python">Python</label><br><br>
+
+
+               <label for="mensagem">Mensagem:</label><br>
+               <textarea id="mensagem" name="mensagem" rows="5" cols="30" required
+                  placeholder="Digite seu texto aqui..."></textarea><br>
+
+               <button type="submit">Enviar</button>
+            </fieldset>
+         </form>
+      </section>
+      <hr>
+      <section>
+         <h2 id="html-formatacao">Estruturando seu HTML + formatações 
+            <a href="#inicio">
+               <img src="./src/midias/botao volta.png" alt="desenho de uma seta voltar" width="16px">
+            </a>
+         </h2>
+         <h3>O que é a estrutura do HTML?</h3>
+         <p>
+            A estrutura do HTML define a organização básica de uma página web. Ela começa com a declaração
+            <code>&lt;!DOCTYPE html&gt;</code>, seguida pelas tags <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>
+            e <code>&lt;body&gt;</code>.
+            No <strong>head</strong> ficam informações como o título da página e a codificação de caracteres.
+            Já no <strong>body</strong> está o conteúdo que será exibido ao usuário, como textos, imagens e links.
+            Essa estrutura é essencial para que os navegadores interpretem e exibam corretamente o site.
+         </p>
+
+         <h3>Exemplo de estrutura HTML básica:</h3>
+         <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Minha Página&lt;/title&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;h1&gt;Bem-vindo ao meu site&lt;/h1&gt;
+    &lt;p&gt;Esse é um exemplo básico de HTML.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+  </code></pre>
+      </section>
+      <hr>
+      <section>
+         <h2 id="midias">📝
+            Trabalhando com Mídias utilizando HTML
+            <a href="#inicio">
+               <img src="./src/midias/botao volta.png" alt="desenho de uma seta voltar" width="16px">
+            </a>
+         </h2>
+         <h3>Uso de Mídias em HTML</h3>
+         <p>
+            Em HTML, mídias são recursos como imagens, áudios e vídeos que enriquecem o conteúdo da página.
+            A tag <code>&lt;img&gt;</code> é usada para exibir imagens, enquanto <code>&lt;audio&gt;</code> e
+            <code>&lt;video&gt;</code> permitem incorporar sons e vídeos diretamente no site.
+            Essas tags podem conter atributos como <code>src</code> (fonte do arquivo), <code>controls</code> (exibir
+            controles de reprodução) e <code>autoplay</code> (reprodução automática).
+            O uso correto das mídias melhora a experiência do usuário e torna a página mais atrativa.
+         </p>
+
+         <ol>
+            <li><strong>&lt;img&gt;</strong> – Usada para inserir imagens.</li>
+            <li><strong>&lt;audio&gt;</strong> – Usada para adicionar arquivos de áudio.</li>
+            <li><strong>&lt;video&gt;</strong> – Usada para inserir vídeos.</li>
+            <li><strong>&lt;source&gt;</strong> – Usada dentro das tags &lt;audio&gt; ou &lt;video&gt; para especificar
+               múltiplas fontes.</li>
+            <li><strong>&lt;track&gt;</strong> – Usada dentro da tag &lt;video&gt; para adicionar legendas ou faixas de
+               texto.</li>
+            <li><strong>&lt;figure&gt;</strong> – Agrupa mídias com uma legenda (como imagem + descrição).</li>
+            <li><strong>&lt;figcaption&gt;</strong> – Adiciona uma legenda a um elemento &lt;figure&gt;.</li>
+            <li><strong>&lt;embed&gt;</strong> – Incorpora conteúdo externo, como PDF ou arquivos em Flash (hoje pouco
+               usado).</li>
+            <li><strong>&lt;object&gt;</strong> – Também usado para incorporar arquivos multimídia, como animações e
+               documentos.</li>
+            <li><strong>&lt;iframe&gt;</strong> – Usado para incorporar outra página web (como vídeos do YouTube).</li>
+         </ol>
+
+         <p>Alguns exemplos de mídias:</p>
+         <p>
+            ✔️Imagem:
+         <figure>
+            <img src="./src/midias/esquilo.jpg" alt="Foto de esquilo" title="Esquilo" width="300px">
+            <figcaption>Foto de um esquilo</figcaption>
+         </figure>
+         </p>
+         <p>
+            ✔️Áudio: <br>
+            <audio src="./src/midias/music.mp3" controls></audio>
+         </p>
+         <p>
+            ✔️Vídeo: <br>
+            <video src="./src/midias/video.mp4" controls width="300px"></video>
+         </p>
+      </section>
+
+      <hr>
+      <section>
+         <h2 id="tabelas">📝Criando Tabelas com HTML <a href="#inicio">
+               <img src="./src/midias/botao volta.png" alt="desenho de uma seta voltar" width="16px">
+            </a>
+         </h2>
+
+         <h3>Tabelas com Tags Semânticas</h3>
+         <p>
+            As tabelas em HTML são utilizadas para exibir dados organizados em linhas e colunas. Para garantir
+            acessibilidade e significado ao conteúdo, utilizamos tags semânticas como:
+         </p>
+         <ul>
+            <li><strong>&lt;table&gt;</strong>: define o início de uma tabela.</li>
+            <li><strong>&lt;thead&gt;</strong>: agrupa o cabeçalho da tabela.</li>
+            <li><strong>&lt;tbody&gt;</strong>: agrupa o corpo da tabela.</li>
+            <li><strong>&lt;tfoot&gt;</strong>: agrupa o rodapé da tabela (opcional).</li>
+            <li><strong>&lt;tr&gt;</strong>: define uma linha.</li>
+            <li><strong>&lt;th&gt;</strong>: define uma célula de cabeçalho (com significado).</li>
+            <li><strong>&lt;td&gt;</strong>: define uma célula de dado comum.</li>
+         </ul>
+         <p>
+            O uso correto dessas tags melhora a organização do código, facilita a leitura por leitores de tela e
+            contribui para boas práticas de desenvolvimento.
+         </p>
+         <p>Exemplo:</p>
+         <table border="1">
+            <caption><strong>Matricula 2025</strong></caption>
+            <thead>
+               <th colspan="4">Listas de Alunos</th>
+               <tr>
+                  <th title="Nome completo">Nome</th>
+                  <th>Idade</th>
+                  <th>Curso</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>Maria Oliveira</td>
+                  <td>22</td>
+                  <td>Engenharia</td>
+               </tr>
+               <tr>
+                  <td>João Silva</td>
+                  <td>24</td>
+                  <td>Análise de Sistemas</td>
+               </tr>
+               <tr>
+                  <td>Ana Souza</td>
+                  <td>20</td>
+                  <td>Design Gráfico</td>
+               </tr>
+            </tbody>
+            <tfoot>
+               <tr>
+                  <td colspan="3">Total de alunos: 3</td>
+               </tr>
+            </tfoot>
+         </table>
+      </section>
+      <hr>
+      <section>
+         <h2 id="semantico">📝Entendendo HTML Semântico <a href="#inicio">
+               <img src="./src/midias/botao volta.png" alt="desenho de uma seta voltar" width="16px">
+            </a>
+         </h2>
+         <h3>Resumo sobre Tags Semânticas</h3>
+         <p>
+            As tags semânticas em HTML são elementos que carregam um significado claro sobre o conteúdo que envolvem.
+            Elas ajudam a organizar melhor a estrutura da página, facilitando a leitura do código por desenvolvedores,
+            navegadores e leitores de tela.
+         </p>
+         <p>
+            Exemplos de tags semânticas incluem:
+         </p>
+         <ul>
+            <li><strong>&lt;header&gt;</strong>: define o cabeçalho de uma página ou seção.</li>
+            <li><strong>&lt;nav&gt;</strong>: agrupa links de navegação.</li>
+            <li><strong>&lt;main&gt;</strong>: representa o conteúdo principal do documento.</li>
+            <li><strong>&lt;section&gt;</strong>: agrupa conteúdos relacionados com um mesmo tema.</li>
+            <li><strong>&lt;article&gt;</strong>: representa um conteúdo independente, como postagens ou notícias.</li>
+            <li><strong>&lt;aside&gt;</strong>: conteúdo complementar, como barras laterais.</li>
+            <li><strong>&lt;footer&gt;</strong>: rodapé da página ou seção.</li>
+         </ul>
+         <p>
+            O uso adequado dessas tags melhora a semântica, acessibilidade e SEO do site, além de tornar o HTML mais
+            organizado e compreensível.
+         </p>
+
+      </section>
+      <hr>
+      <section>
+         <h2 id="referencias"> Links de referências
+            <a href="#inicio">
+               <img src="./src/midias/botao volta.png" alt="desenho de uma seta voltar" width="16px">
+            </a>
+         </h2>
+
+         <ul>
+            <li>
+               <cite>
+                  <a href="https://code.visualstudio.com/Download" target="_blank">Visual Studio Code -
+                     Download</a>
+               </cite>
+            </li>
+            <li>
+               <cite>
+                  <a href="https://support.google.com/campaignmanager/answer/2828688?hl=pt-BR" target="_blank">Google
+                     Chrome -
+                     Ferramenta do desenvolvedor </a>
+               </cite>
+            </li>
+            <li>
+               <cite>
+                  <a href="https://www.alura.com.br/artigos/o-que-e-html-suas-tags-parte-1-estrutura-basica?srsltid=AfmBOopaQ3f41YghIMuRpeNBA3J__pV1nzw50pf6V94pvUDcP2gWNhDV"
+                     target="_blank">Alura
+                     - O que é o HTML e suas tags? Parte 1: estrutura básica</a>
+               </cite>
+            </li>
+            <li>
+               <cite>
+                  <a href="https://www.alura.com.br/artigos/o-que-e-html-suas-tags-parte-5-atributos-elementos#:~:text=H%C3%A1%20dois%20tipos%20de%20atributos,%2C%20href%2C%20label%2C%20etc."
+                     target="_blank">Alura - O que é o HTML e suas tags? Parte 5: atributos dos elementos</a>
+               </cite>
+            </li>
+         </ul>
+      </section>
+
+   </main>
+   <hr>
+   <footer style="text-align: center;">
+      <p>
+         @2025 -Desenvolvido por Silvia Reis - Bootcamp Santander & DIO
+      </p>
+   </footer>
+</body>
+
+</html>
