@@ -1,6 +1,12 @@
 # Pagina-Web-Simples-HTML-
 # 🚀 Projeto Santander Bootcamp 2025 - Front-End
 
+## 🌐 Projeto publicado
+
+Acesse o projeto ao vivo aqui:  
+🔗 [Clique para ver o site](https://silviareis2.github.io/Pagina-Simples-HTML/)
+
+
 Este repositório faz parte do desafio do **Bootcamp Santander 2025 - Front-End**, uma parceria entre o **DIO** e o **Santander**.
 
 O objetivo do projeto é aplicar os conhecimentos adquiridos durante o curso e **criar uma página web utilizando as principais tags aprendidas em HTML**.
@@ -21,7 +27,7 @@ O projeto consiste em uma **página web simples** que descreve e demonstra o uso
 
 ## 📸 Preview do projeto
 
-![Preview do projeto](./src/midias/paginasimples-preview.gif)git branch -M main
+![Preview do projeto](./src/midias/paginasimples-preview.gif)
 
 
 ## 👩‍💻 Autora
